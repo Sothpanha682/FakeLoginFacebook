@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Light gray-blue page background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Login Area */
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 396px; /* Exact width from Facebook's login */
+}
+
+.facebook-logo {
+    width: 240px;
+    height: 79.27px;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 20px 16px;
+    width: 100%;
+    box-sizing: border-box; /* Important for padding */
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Spacing between form elements */
+}
+
+/* Form Elements */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.login-box .login-button-main {
+    background-color: #1877f2; /* Facebook Blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.login-box .login-button-main:hover {
+    background-color: #166fe5;
+}
+
+.login-box .forgot-password-main {
+    color: #1877f2;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.login-box .forgot-password-main:hover {
+    text-decoration: underline;
+}
+
+/* Divider "or" */
+.login-box .divider {
+    text-align: center;
+    color: #8a8d91;
+    font-size: 13px;
+    margin: 16px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.login-box .divider::before,
+.login-box .divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dddfe2;
+}
+
+
+/* Create Account Button */
+.login-box .create-account-button {
+    background-color: #42b72a; /* Facebook Green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 16px;
+    cursor: pointer;
+    max-width: 220px; 
+    align-self: center;
+}
+
+.login-box .create-account-button:hover {
+    background-color: #36a420;
+}
+
+/* Footer (This entire section is updated) */
+.footer-container {
+    padding: 20px;
+    background-color: #ffffff; /* Footer has a white background */
+    color: #737373;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    max-width: 980px; /* Centered content wrapper */
+    margin: 0 auto;
+}
+
+.footer-languages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-languages li {
+    margin-right: 10px;
+    line-height: 1.6;
+}
+
+.footer-languages li a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-languages li a:hover {
+    text-decoration: underline;
+}
+
+/* The '+' button */
+.footer-languages .plus-button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 22px; /* Vertically center the '+' */
+    text-align: center;
+    border: 1px solid #ccd0d5;
+    background-color: #f5f6f7;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b4f56;
+    text-decoration: none;
+}
+
+.footer-languages .plus-button:hover {
+    background-color: #ebedf0;
+}
+
+.footer-line {
+    border-top: 1px solid #dddfe2;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* This makes the links wrap to new lines */
+}
+
+.footer-links li {
+    margin-right: 20px; /* Space between links */
+    line-height: 1.6;
+}
+
+.footer-links li a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #737373;
+    font-size: 11px;
+}
